@@ -18,29 +18,49 @@
             <form id="contact_form_mailer_id" action="<?php echo '#contact_form_mailer_id'; ?>" method="post" onsubmit="event.stopImmediatePropagation();event.stopPropagation();">
                 <div class="row">
                     <div class="mb-5 col-md-6">
-                        <h3 class="form-label text-white"><?php echo PG_Blocks_v3::getAttribute( $args, 'first_name_label' ) ?></h3>
-                        <input type="text" class="bg-light border-start-0 border-end-0 border-top-0 form-control ps-2 pe-2 rounded-2" id="inputFirstName" placeholder="Geben Sie Ihren Vornamen ein..." name="contact_form_mailer_id_1" value="<?php echo ( isset( $_POST['contact_form_mailer_id_1'] ) ? $_POST['contact_form_mailer_id_1'] : '' ); ?>"><?php echo PG_Blocks_v3::getAttribute( $args, 'first_name_placeholder' ) ?>
+                        <h4 class="form-label text-white"><?php echo PG_Blocks_v3::getAttribute( $args, 'first_name_label' ) ?></h4>
+                        <input type="text" class="bg-light border-start-0 border-end-0 border-top-0 form-control ps-2 pe-2 rounded-2" id="inputFirstName" placeholder="Geben Sie Ihren Vornamen ein..." required="true" name="contact_form_mailer_id_1" value="<?php echo ( isset( $_POST['contact_form_mailer_id_1'] ) ? $_POST['contact_form_mailer_id_1'] : '' ); ?>"><?php echo PG_Blocks_v3::getAttribute( $args, 'first_name_placeholder' ) ?>
                     </div>
                     <div class="mb-5 col-md-6">
-                        <h3 class="form-label text-white"><?php echo PG_Blocks_v3::getAttribute( $args, 'last_name_label' ) ?></h3>
-                        <input type="text" class="bg-light border-start-0 border-end-0 border-top-0 form-control ps-2 pe-2 rounded-2" id="inputLastName" placeholder="Geben Sie Ihren Nachnamen ein..." name="contact_form_mailer_id_2" value="<?php echo ( isset( $_POST['contact_form_mailer_id_2'] ) ? $_POST['contact_form_mailer_id_2'] : '' ); ?>"><?php echo PG_Blocks_v3::getAttribute( $args, 'last_name_placeholder' ) ?>
+                        <h4 class="form-label text-white"><?php echo PG_Blocks_v3::getAttribute( $args, 'last_name_label' ) ?></h4>
+                        <input type="text" class="bg-light border-start-0 border-end-0 border-top-0 form-control ps-2 pe-2 rounded-2" id="inputLastName" placeholder="Geben Sie Ihren Nachnamen ein..." required="true" name="contact_form_mailer_id_2" value="<?php echo ( isset( $_POST['contact_form_mailer_id_2'] ) ? $_POST['contact_form_mailer_id_2'] : '' ); ?>"><?php echo PG_Blocks_v3::getAttribute( $args, 'last_name_placeholder' ) ?>
                     </div>
                 </div>
                 <div class="row">
                     <div class="mb-5 col-md-6">
-                        <h3 class="form-label text-white"><?php echo PG_Blocks_v3::getAttribute( $args, 'email_label' ) ?></h3>
-                        <input type="email" class="bg-light border-start-0 border-end-0 border-top-0 form-control ps-2 pe-2 rounded-2" id="inputEmail" placeholder="Geben Sie Ihre E-Mail-Adresse ein..." name="contact_form_mailer_id_3" value="<?php echo ( isset( $_POST['contact_form_mailer_id_3'] ) ? $_POST['contact_form_mailer_id_3'] : '' ); ?>"><?php echo PG_Blocks_v3::getAttribute( $args, 'email_placeholder' ) ?>
+                        <h4 class="form-label text-white"><?php echo PG_Blocks_v3::getAttribute( $args, 'email_label' ) ?></h4>
+                        <input type="email" class="bg-light border-end-0 border-start-0 border-top-0 form-control pe-2 ps-2 rounded-2" id="inputEmail" placeholder="Geben Sie Ihre E-Mail-Adresse ein..." required="true" name="contact_form_mailer_id_3" value="<?php echo ( isset( $_POST['contact_form_mailer_id_3'] ) ? $_POST['contact_form_mailer_id_3'] : '' ); ?>"><?php echo PG_Blocks_v3::getAttribute( $args, 'email_placeholder' ) ?>
                     </div>
-                    <div class="mb-5 col-md-6">
-                        <h3 class="form-label text-white"><?php echo PG_Blocks_v3::getAttribute( $args, 'source_label' ) ?></h3>
-                        <select id="formInput4" class="bg-light border-start-0 border-end-0 border-top-0 form-control ps-2 pe-2 rounded-2" name="contact_form_mailer_id_4">
+                    <div class="mb-5 col-md-6"> 
+                        <h4 class="form-label text-white"><?php echo PG_Blocks_v3::getAttribute( $args, 'phone_label' ) ?></h4> 
+                        <input type="tel" class="bg-light border-start-0 border-end-0 border-top-0 form-control ps-2 pe-2 rounded-2" id="inputPhone" placeholder="Geben Sie Ihre Telefonnummer ein..." required="true" name="contact_form_mailer_id_4" value="<?php echo ( isset( $_POST['contact_form_mailer_id_4'] ) ? $_POST['contact_form_mailer_id_4'] : '' ); ?>"><?php echo PG_Blocks_v3::getAttribute( $args, 'phone_placeholder' ) ?> 
+                    </div>
+                    <div class="col-lg-6 col-md-12 mb-5">
+                        <h4 class="form-label text-white"><?php echo PG_Blocks_v3::getAttribute( $args, 'source_label' ) ?></h4>
+                        <select id="formInput4" class="bg-light border-start-0 border-end-0 border-top-0 form-control ps-2 pe-2 rounded-2" name="contact_form_mailer_id_5">
+                            <?php echo PG_Blocks_v3::getAttribute( $args, 'source_options' ) ?>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h4 class="form-label text-white"><?php echo PG_Blocks_v3::getAttribute( $args, 'source_label' ) ?></h4>
+                        <select id="formInput4" class="bg-light border-start-0 border-end-0 border-top-0 form-control ps-2 pe-2 rounded-2" name="contact_form_mailer_id_6">
                             <?php echo PG_Blocks_v3::getAttribute( $args, 'source_options' ) ?>
                         </select>
                     </div>
                 </div>
-                <div class="mb-10">
-                    <h3 class="form-label text-white"><?php echo PG_Blocks_v3::getAttribute( $args, 'message_label' ) ?></h3>
-                    <textarea class="bg-light border-start-0 border-end-0 border-top-0 form-control ps-2 pe-2 rounded-2" rows="6" id="inputTextarea" placeholder="Geben Sie Ihre Nachricht ein..." name="contact_form_mailer_id_5"><?php echo PG_Blocks_v3::getAttribute( $args, 'message_placeholder' ) ?></textarea>
+                <div class="row">
+                    <div class="col col-12 col-lg-12 mb-10">
+                        <h3 class="form-label text-white"><?php echo PG_Blocks_v3::getAttribute( $args, 'message_label' ) ?></h3>
+                        <textarea class="bg-light border-start-0 border-end-0 border-top-0 form-control ps-2 pe-2 rounded-2" rows="6" id="inputTextarea" placeholder="Geben Sie Ihre Nachricht ein..." name="contact_form_mailer_id_7"><?php echo PG_Blocks_v3::getAttribute( $args, 'message_placeholder' ) ?></textarea>
+                    </div>
+                    <div class="col-md-4"> 
+                        <div class="form-check form-check-inline form-switch">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required="true" name="contact_form_mailer_id_8" <?php echo ( isset( $_POST['contact_form_mailer_id_8'] ) ? 'checked' : '' ); ?>>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                <?php _e( 'Datenschutzerklärung zustimmen*', 'opto_energy' ); ?>
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <div class="mt-5 text-end">
                     <button type="submit" class="btn btn-success pe-4 ps-4 rounded-2 rounded-pill text-secondary-emphasis" href="<?php echo (!empty($_GET['context']) && $_GET['context'] === 'edit') ? 'javascript:void()' : PG_Blocks_v3::getLinkUrl( $args, 'submit_button' ) ?>">
