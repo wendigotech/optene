@@ -1,0 +1,302 @@
+@media (max-width:991px) {
+    body.poster {
+        margin-top: 60vh;
+    }
+}
+
+body {
+    line-height: 1.5;
+    hyphens: auto;
+    hyphenate-limit-chars: auto 5;
+}
+
+body.poster {
+    background-attachment: fixed;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #20ffd6;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+.top-5 {
+    top: 5px;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70dvh;
+    text-align: center;
+}
+
+/* end */
+Theme Name: Opto Energy
+Version: 1.0.160
+Theme Name: Opto Energy
+Version: 1.0.159
+Theme Name: Opto Energy
+Version: 1.0.158
+
+
+/* Theme version */
+
+
+a {
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+.banner-section {
+    position: relative;
+    overflow: hidden;
+}
+
+img.banner-image {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.banner-text {
+    margin: -5px 0;
+}
+
+.floating-title {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    font-size: 17vmin;
+    font-weight: 800;
+    opacity: 0.2;
+    max-width: 900px;
+    z-index: -2;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    color: #20ffd6;
+}
+
+.showroom {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.event-main-link {
+    background: white;
+    color: black;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.event-main-link img {
+    height: 42dvh;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.event-main-link:hover {
+    background: linear-gradient(to right,#20ffd6,#1565c0);
+    background-color: gray;
+    color: white;
+}
+
+.event-link {
+    color: white;
+    padding: 1.5rem;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.event-link:hover {
+    color: black;
+    background-color: white;
+}
+
+.event-link img {
+    height: 30dvh;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+a.see-more {
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 0.3rem 1rem;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    border: 2px solid white;
+}
+
+a.see-more:hover {
+    background: black;
+    color: white;
+}
+
+a.see-more.btn-big {
+    font-size: 1.25rem;
+    padding: 0.5rem 1.2rem;
+}
+
+.h-scrolling-block {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .h-scrolling-block {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.h-scrolling-block > .row {
+    min-width: 1200px;
+}
+
+.h-scrolling-block img {
+    height: 240px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    padding: 10px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+}
+
+.social-links a:hover {
+    color: black;
+    background-color: white;
+}
+
+.go-to-top {
+    position: fixed;
+    right: 50%;
+    bottom: 0px;
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0rem 0.5rem;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.go-to-top:hover {
+    color: white;
+    background-color: #555;
+}
+
+/* back to top styles */
+#back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    display: none;
+    background-color: #17456b;
+    width: 4em;
+    height: 4em;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    z-index: 1000;
+    border: unset;
+}
+
+/* No selection provided, adding a general improvement to the code */
+/* Add a CSS reset to normalize styles across browsers */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Improve accessibility by adding a focus style for links */
+a:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #20ffd6;
+}
+
+/* Add a transition to the body to improve page loading experience */
+body {
+    transition: background-color 0.3s ease;
+}
+
+/* Improve the hover effect for links */
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: #20ffd6;
+}
+
+/* Add a media query to improve responsiveness on smaller screens */
+@media (max-width: 768px) {
+    /* Add styles to improve layout on smaller screens */
+    .banner-section {
+        height: 100vh;
+    }
+
+    .banner-text {
+        font-size: 1.5rem;
+    }
+}
+
+.bg-black {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
+}
+
+nav strong {
+    position: relative;
+}
+
+nav strong::before {
+    /* Highlight color */
+    background-color: #0c1e2ac3;
+    content: "";
+    position: absolute;
+    width: calc(100% + 6px);
+    height: 100%;
+    left: -3px;
+    bottom: 0;
+    z-index: -1;
+    filter: brightness(0.3);
+}
