@@ -26,5 +26,5 @@
 'icon1' => array('id' => 0, 'url' => esc_url( get_template_directory_uri() . '/img/icons/energy-socket.svg' ), 'size' => '', 'svg' => '', 'alt' => null), 'advantage_title1' => 'Energieeffizienz', 'advantage_description1' => 'Durch die Nutzung von Solarenergie und anderen nachhaltigen Technologien'
             ),
             'dynamic' => true,
-            'version' => '1.0.161'
+            'version' => '1.0.162'
         ) );

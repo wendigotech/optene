@@ -22,5 +22,5 @@
 'event_image' => array('id' => 0, 'url' => 'https://images.unsplash.com/photo-1441171205449-f600f908a9f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wyMDkyMnwwfDF8c2VhcmNofDQ4OHx8ZW5lcmd5fGVufDB8fHx8MTczMzc4NTA1Nnww&ixlib=rb-4.0.3&q=80&w=1080', 'size' => '', 'svg' => '', 'alt' => 'Opto Energy Solar Panel'), 'event_title' => 'Opto Energy - Effiziente Lösungen für eine nachhaltige Zukunft'
             ),
             'dynamic' => true,
-            'version' => '1.0.161'
+            'version' => '1.0.162'
         ) );

@@ -95,5 +95,5 @@
 </svg>', 'alt' => null)
             ),
             'dynamic' => true,
-            'version' => '1.0.161'
+            'version' => '1.0.162'
         ) );

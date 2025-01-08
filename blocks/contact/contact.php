@@ -53,7 +53,7 @@
                         <h3 class="form-label text-white"><?php echo PG_Blocks_v3::getAttribute( $args, 'message_label' ) ?></h3>
                         <textarea class="bg-light border-start-0 border-end-0 border-top-0 form-control ps-2 pe-2 rounded-2" rows="6" id="inputTextarea" placeholder="Geben Sie Ihre Nachricht ein..." name="contact_form_mailer_id_7"><?php echo PG_Blocks_v3::getAttribute( $args, 'message_placeholder' ) ?></textarea>
                     </div>
-                    <div class="col-md-4"> 
+                    <div class="col-md-4 pt-3"> 
                         <div class="form-check form-check-inline form-switch">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required="true" name="contact_form_mailer_id_8" <?php echo ( isset( $_POST['contact_form_mailer_id_8'] ) ? 'checked' : '' ); ?>>
                             <label class="form-check-label" for="flexCheckDefault">
