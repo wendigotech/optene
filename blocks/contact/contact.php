@@ -36,9 +36,9 @@
                         <input type="tel" class="bg-light border-start-0 border-end-0 border-top-0 form-control ps-2 pe-2 rounded-2" id="inputPhone" placeholder="Geben Sie Ihre Telefonnummer ein..." required="true" name="contact_form_mailer_id_4" value="<?php echo ( isset( $_POST['contact_form_mailer_id_4'] ) ? $_POST['contact_form_mailer_id_4'] : '' ); ?>"><?php echo PG_Blocks_v3::getAttribute( $args, 'phone_placeholder' ) ?> 
                     </div>
                     <div class="col-lg-6 col-md-12 mb-5">
-                        <h4 class="form-label text-white"><?php echo PG_Blocks_v3::getAttribute( $args, 'source_label' ) ?></h4>
+                        <h4 class="form-label text-white"><?php echo PG_Blocks_v3::getAttribute( $args, 'service_label' ) ?></h4>
                         <select id="formInput4" class="bg-light border-start-0 border-end-0 border-top-0 form-control ps-2 pe-2 rounded-2" name="contact_form_mailer_id_5">
-                            <?php echo PG_Blocks_v3::getAttribute( $args, 'source_options' ) ?>
+                            <?php echo PG_Blocks_v3::getAttribute( $args, 'service_options' ) ?>
                         </select>
                     </div>
                     <div class="col-md-6 mb-5">

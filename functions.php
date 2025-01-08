@@ -194,25 +194,25 @@ if ( ! function_exists( 'opto_energy_enqueue_scripts' ) ) :
 
     wp_enqueue_script( 'g-recaptcha', 'https://www.google.com/recaptcha/api.js' );
     wp_deregister_script( 'opto_energy-typed@' );
-    wp_enqueue_script( 'opto_energy-typed@', 'https://cdn.jsdelivr.net/npm/typed.js@2.0.12', [], '1.0.162', false);
+    wp_enqueue_script( 'opto_energy-typed@', 'https://cdn.jsdelivr.net/npm/typed.js@2.0.12', [], '1.0.167', false);
 
     wp_deregister_script( 'opto_energy-lenis' );
-    wp_enqueue_script( 'opto_energy-lenis', 'https://unpkg.com/lenis@1.1.18/dist/lenis.min.js', [], '1.0.162', false);
+    wp_enqueue_script( 'opto_energy-lenis', 'https://unpkg.com/lenis@1.1.18/dist/lenis.min.js', [], '1.0.167', false);
 
-    wp_register_script( 'inline-script-1', '', [], '1.0.162', false );
+    wp_register_script( 'inline-script-1', '', [], '1.0.167', false );
     wp_enqueue_script( 'inline-script-1' );
     wp_add_inline_script( 'inline-script-1', '/* Pinegrow Interactions, do not remove */ (function(){try{if(!document.documentElement.hasAttribute(\'data-pg-ia-disabled\')) { window.pgia_small_mq=typeof pgia_small_mq==\'string\'?pgia_small_mq:\'(max-width:767px)\';window.pgia_large_mq=typeof pgia_large_mq==\'string\'?pgia_large_mq:\'(min-width:768px)\';var style = document.createElement(\'style\');var pgcss=\'html:not(.pg-ia-no-preview) [data-pg-ia-hide=""] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show=""] {opacity:1;visibility:visible;display:block;}\';if(document.documentElement.hasAttribute(\'data-pg-id\') && document.documentElement.hasAttribute(\'data-pg-mobile\')) {pgia_small_mq=\'(min-width:0)\';pgia_large_mq=\'(min-width:99999px)\'} pgcss+=\'@media \' + pgia_small_mq + \'{ html:not(.pg-ia-no-preview) [data-pg-ia-hide="mobile"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="mobile"] {opacity:1;visibility:visible;display:block;}}\';pgcss+=\'@media \' + pgia_large_mq + \'{html:not(.pg-ia-no-preview) [data-pg-ia-hide="desktop"] {opacity:0;visibility:hidden;}html:not(.pg-ia-no-preview) [data-pg-ia-show="desktop"] {opacity:1;visibility:visible;display:block;}}\';style.innerHTML=pgcss;document.querySelector(\'head\').appendChild(style);}}catch(e){console&&console.log(e);}})()');
 
     wp_deregister_script( 'opto_energy-popper' );
-    wp_enqueue_script( 'opto_energy-popper', get_template_directory_uri() . '/assets/js/popper.min.js', [], '1.0.162', true);
+    wp_enqueue_script( 'opto_energy-popper', get_template_directory_uri() . '/assets/js/popper.min.js', [], '1.0.167', true);
 
     wp_deregister_script( 'opto_energy-bootstrap' );
-    wp_enqueue_script( 'opto_energy-bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', [], '1.0.162', true);
+    wp_enqueue_script( 'opto_energy-bootstrap', get_template_directory_uri() . '/bootstrap/js/bootstrap.min.js', [], '1.0.167', true);
 
     wp_deregister_script( 'opto_energy-pgia' );
-    wp_enqueue_script( 'opto_energy-pgia', get_template_directory_uri() . '/pgia/lib/pgia.js', [], '1.0.162', true);
+    wp_enqueue_script( 'opto_energy-pgia', get_template_directory_uri() . '/pgia/lib/pgia.js', [], '1.0.167', true);
 
-    wp_register_script( 'inline-script-2', '', [], '1.0.162', true );
+    wp_register_script( 'inline-script-2', '', [], '1.0.167', true );
     wp_enqueue_script( 'inline-script-2' );
     wp_add_inline_script( 'inline-script-2', 'document.addEventListener(\'DOMContentLoaded\', function() {
                 var options = {
@@ -226,7 +226,7 @@ if ( ! function_exists( 'opto_energy_enqueue_scripts' ) ) :
                 var typed = new Typed("#typed-text", options);
             });');
 
-    wp_register_script( 'inline-script-3', '', [], '1.0.162', true );
+    wp_register_script( 'inline-script-3', '', [], '1.0.167', true );
     wp_enqueue_script( 'inline-script-3' );
     wp_add_inline_script( 'inline-script-3', 'window.addEventListener(\'scroll\', function() {
                     var btn = document.getElementById(\'back-to-top\');
@@ -241,7 +241,7 @@ if ( ! function_exists( 'opto_energy_enqueue_scripts' ) ) :
                     window.scrollTo({ top: 0, behavior: \'smooth\' });
                 });');
 
-    wp_register_script( 'inline-script-4', '', [], '1.0.162', true );
+    wp_register_script( 'inline-script-4', '', [], '1.0.167', true );
     wp_enqueue_script( 'inline-script-4' );
     wp_add_inline_script( 'inline-script-4', '// Initialize Lenis
             const lenis = new Lenis({
@@ -254,26 +254,26 @@ if ( ! function_exists( 'opto_energy_enqueue_scripts' ) ) :
             });');
 
     wp_deregister_script( 'opto_energy-all' );
-    wp_enqueue_script( 'opto_energy-all', 'https://use.fontawesome.com/releases/v5.13.1/js/all.js', [], '1.0.162', true);
+    wp_enqueue_script( 'opto_energy-all', 'https://use.fontawesome.com/releases/v5.13.1/js/all.js', [], '1.0.167', true);
 
     /* Pinegrow generated Enqueue Scripts End */
 
         /* Pinegrow generated Enqueue Styles Begin */
 
     wp_deregister_style( 'opto_energy-bootstrap' );
-    wp_enqueue_style( 'opto_energy-bootstrap', get_template_directory_uri() . '/bootstrap_theme/bootstrap.css', [], '1.0.162', 'all');
+    wp_enqueue_style( 'opto_energy-bootstrap', get_template_directory_uri() . '/bootstrap_theme/bootstrap.css', [], '1.0.167', 'all');
 
     wp_deregister_style( 'opto_energy-blocks' );
-    wp_enqueue_style( 'opto_energy-blocks', get_template_directory_uri() . '/blocks.css', [], '1.0.162', 'all');
+    wp_enqueue_style( 'opto_energy-blocks', get_template_directory_uri() . '/blocks.css', [], '1.0.167', 'all');
 
     wp_deregister_style( 'opto_energy-style' );
-    wp_enqueue_style( 'opto_energy-style', get_bloginfo('stylesheet_url'), [], '1.0.162', 'all');
+    wp_enqueue_style( 'opto_energy-style', get_bloginfo('stylesheet_url'), [], '1.0.167', 'all');
 
     wp_deregister_style( 'opto_energy-file' );
-    wp_enqueue_style( 'opto_energy-file', get_template_directory_uri() . '/path/to/your/css/file.css', [], '1.0.162', 'all');
+    wp_enqueue_style( 'opto_energy-file', get_template_directory_uri() . '/path/to/your/css/file.css', [], '1.0.167', 'all');
 
     wp_deregister_style( 'opto_energy-lenis' );
-    wp_enqueue_style( 'opto_energy-lenis', 'https://unpkg.com/lenis@1.1.18/dist/lenis.css', [], '1.0.162', 'all');
+    wp_enqueue_style( 'opto_energy-lenis', 'https://unpkg.com/lenis@1.1.18/dist/lenis.css', [], '1.0.167', 'all');
 
     /* Pinegrow generated Enqueue Styles End */
 
